@@ -1,0 +1,131 @@
+import Forest/Unreal from pbr-ue.material
+import Forest_Shadowed/Unreal from pbr-ue.material
+import PBR/Unreal from pbr-ue.material
+
+material GrassCustom : Forest_Shadowed/Unreal
+{
+    technique
+    {
+      pass
+      {
+        cull_hardware none
+        cull_software none
+
+        texture_unit Albedo
+        {
+            texture grassWalpha.dds
+        }
+      }
+	}
+}
+
+material 3D-Diggers/fir01 : Forest/Unreal
+{
+    technique
+    {
+      pass
+      {
+        texture_unit Albedo
+        {
+            tex_address_mode clamp
+            texture fir01.dds
+        }
+      }
+	}
+}
+
+material 3D-Diggers/fir02 : PBR/Unreal
+{
+    technique
+    {
+      pass
+      {
+        texture_unit Albedo
+        {
+            texture white-spruce-tree-bark-albedo.dds
+        }
+        texture_unit Normal
+        {
+            texture white-spruce-tree-bark-normal-dx.dds
+        }
+        texture_unit Metalness
+        {
+            texture white-spruce-tree-bark-metalness.dds
+        }
+        texture_unit Roughness
+        {
+            texture white-spruce-tree-bark-roughness.dds
+        }
+        texture_unit Emissive
+        {
+            texture black.dds
+        }
+        texture_unit AmbientOcclusion
+        {
+            texture white-spruce-tree-bark-ao.dds
+        }
+      }
+	}
+}
+
+material 3D-Diggers/farn01 : Forest/Unreal
+{
+    technique
+    {
+      pass
+      {
+        texture_unit Albedo
+        {
+            tex_address_mode clamp
+            texture farn01.dds
+        }
+	}
+	}
+}
+
+material 3D-Diggers/farn02 : Forest/Unreal
+{
+    technique
+    {
+      pass
+      {
+        texture_unit Albedo
+        {
+            tex_address_mode clamp
+            texture farn02.dds
+        }
+	}
+	}
+}
+
+material 3D-Diggers/plant1 : Forest/Unreal
+{
+    technique
+    {
+      pass
+      {
+        alpha_rejection greater_equal 127
+
+        texture_unit Albedo
+        {
+            tex_address_mode clamp
+            texture plant1.dds
+        }
+	    }
+    }
+}
+
+material 3D-Diggers/plant2 : Forest/Unreal
+{
+    technique
+    {
+      pass
+      {
+        texture_unit Albedo
+        {
+            tex_address_mode clamp
+            texture plant2.dds
+        }
+       }
+	}
+}
