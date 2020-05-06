@@ -29,7 +29,16 @@ material Cube : PBR/Unity
             {
                 texture white.dds
             }
+
+            fragment_program_ref PBR_Unity_fs
+            {
+                param_named bias0 float 0.001
+                param_named bias1 float 0.002
+                param_named bias2 float 0.003
+            }
 		}
+
+
     }
 }
 
@@ -95,6 +104,13 @@ material Plane : PBR/Unreal
             texture_unit AmbientOcclusion
             {
                 texture white.dds
+            }
+
+            fragment_program_ref PBR_Unreal_fs
+            {
+                param_named bias0 float 0.000
+                param_named bias1 float 0.001
+                param_named bias2 float 0.002
             }
 		}
     }
