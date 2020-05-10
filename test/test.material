@@ -5,6 +5,8 @@ import PBR/Unity from pbr-unity.material
 
 material Cube : PBR/Unity
 {
+    receive_shadows on
+
 	technique
 	{
 		pass
@@ -29,16 +31,7 @@ material Cube : PBR/Unity
             {
                 texture white.dds
             }
-
-            fragment_program_ref PBR_Unity_fs
-            {
-                param_named bias0 float 0.001
-                param_named bias1 float 0.002
-                param_named bias2 float 0.003
-            }
 		}
-
-
     }
 }
 

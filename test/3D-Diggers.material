@@ -1,8 +1,9 @@
-import Forest/Unreal from pbr-ue.material
-import Forest_Shadowed/Unreal from pbr-ue.material
+import Forest from pbr-forest.material
+import Forest_Shadowed from pbr-forest.material
 import PBR/Unreal from pbr-ue.material
+import PBRBasic from pbr-basic.material
 
-material GrassCustom : Forest_Shadowed/Unreal
+material GrassCustom : Forest_Shadowed
 {
     technique
     {
@@ -19,8 +20,9 @@ material GrassCustom : Forest_Shadowed/Unreal
 	}
 }
 
-material 3D-Diggers/fir01 : Forest/Unreal
+material 3D-Diggers/fir01 : PBRBasic
 {
+    receive_shadows off
     technique
     {
       pass
@@ -56,19 +58,11 @@ material 3D-Diggers/fir02 : PBR/Unreal
         {
             texture white-spruce-tree-bark-roughness.dds
         }
-        texture_unit Emissive
-        {
-            texture black.dds
-        }
-        texture_unit AmbientOcclusion
-        {
-            texture white-spruce-tree-bark-ao.dds
-        }
       }
 	}
 }
 
-material 3D-Diggers/farn01 : Forest/Unreal
+material 3D-Diggers/farn01 : Forest
 {
     technique
     {
@@ -83,7 +77,7 @@ material 3D-Diggers/farn01 : Forest/Unreal
 	}
 }
 
-material 3D-Diggers/farn02 : Forest/Unreal
+material 3D-Diggers/farn02 : Forest
 {
     technique
     {
@@ -98,7 +92,7 @@ material 3D-Diggers/farn02 : Forest/Unreal
 	}
 }
 
-material 3D-Diggers/plant1 : Forest/Unreal
+material 3D-Diggers/plant1 : Forest
 {
     technique
     {
@@ -115,7 +109,7 @@ material 3D-Diggers/plant1 : Forest/Unreal
     }
 }
 
-material 3D-Diggers/plant2 : Forest/Unreal
+material 3D-Diggers/plant2 : Forest
 {
     technique
     {
