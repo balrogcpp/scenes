@@ -11,6 +11,7 @@ material GrassCustom : Forest_Shadowed
       {
         cull_hardware none
         cull_software none
+        alpha_rejection greater_equal 128
 
         texture_unit Albedo
         {
@@ -27,9 +28,9 @@ material 3D-Diggers/fir01 : PBRBasic
     {
       pass
       {
+        alpha_rejection greater_equal 128
         texture_unit Albedo
         {
-            tex_address_mode clamp
             texture fir01.dds
         }
       }
@@ -62,15 +63,17 @@ material 3D-Diggers/fir02 : PBR/Unreal
 	}
 }
 
-material 3D-Diggers/farn01 : Forest
+material 3D-Diggers/farn01 : Forest_Shadowed
 {
+    receive_shadows on
     technique
     {
       pass
       {
+        alpha_rejection greater_equal 128
+
         texture_unit Albedo
         {
-            tex_address_mode clamp
             texture farn01.dds
         }
 	}
@@ -98,11 +101,8 @@ material 3D-Diggers/plant1 : Forest
     {
       pass
       {
-        alpha_rejection greater_equal 127
-
         texture_unit Albedo
         {
-            tex_address_mode clamp
             texture plant1.dds
         }
 	    }
@@ -117,7 +117,6 @@ material 3D-Diggers/plant2 : Forest
       {
         texture_unit Albedo
         {
-            tex_address_mode clamp
             texture plant2.dds
         }
        }
