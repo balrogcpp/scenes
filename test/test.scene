@@ -487,7 +487,7 @@
                 <property data='&lt;bpy id prop: owner="OBSun", name="ant_landscape", address=0x7f2efbcfe668&gt;'
                           name="ant_landscape" type="IDPropertyGroup"/>
             </userData>
-            <light name="Sun" powerScale="10" type="directional" castShadows="true">
+            <light name="Sun" powerScale="2" type="directional" castShadows="true">
                 <colourDiffuse b="1.0" g="1.0" r="1.0"/>
                 <colourSpecular b="1.0" g="1.0" r="1.0"/>
                 <lightRange falloff="1.0" inner="10" outer="500"/>-->
@@ -502,7 +502,7 @@
                 <property data='&lt;bpy id prop: owner="OBCamera", name="ant_landscape", address=0x7f2efbcfe208&gt;'
                           name="ant_landscape" type="IDPropertyGroup"/>
             </userData>
-            <camera fov="1" name="Camera.001" projectionType="perspective">
+            <camera fov="1.5" name="Camera.001" projectionType="perspective">
                 <clipping far="10000.0" near="0.01"/>
 <!--                <light name="Spot" powerScale="5.0" type="spot" castShadows="false">-->
 <!--                    <lightRange falloff="1.0" inner="10" outer="50"/>-->
@@ -560,15 +560,14 @@
 <!--    <geometry name="plant2" mesh="grass.mesh" range="50" wind="false"/>-->
 <!--    </forest>-->
     <environment>
-        <colourAmbient r="0.1" g="0.1" b="0.1"/>
+        <colourAmbient r="0.02" g="0.02" b="0.02"/>
         <colourBackground b="0.0" g="0.0" r="0.0"/>
-        <fog mode="exp" start="0" end="1000" density="0.002">
-                        <colour r="0.33" g="1" b="1" a="1.0"/>
+        <fog mode="exp" start="0" end="1000" density="0.001">
+                        <colour r="0.33" g="0.33" b="1" a="1.0"/>
         </fog>
         <skyBox material="CustomSkyBox"/>
     </environment>
-    <terrainGroup worldSize="200" mapSize="129" minBatchSize="65" maxBatchSize="65" inputScale="10"
-                  tuningCompositeMapDistance="500" tuningMaxPixelError="8">
+    <terrainGroup worldSize="200" mapSize="129" minBatchSize="65" maxBatchSize="65" inputScale="10">
         <terrain x="0" y="0" heightmap="new_terrain.png" />
     </terrainGroup>
 </scene>
