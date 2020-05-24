@@ -1,7 +1,7 @@
 import PbrForest from pbr-forest.material
 import PbrForest_Shadowed from pbr-forest.material
 import Pbr/Unreal from pbr-ue.material
-import PBRBasic from pbr-basic.material
+import PbrBasic from pbr-basic.material
 
 material GrassCustom : PbrForest_Shadowed
 {
@@ -21,7 +21,7 @@ material GrassCustom : PbrForest_Shadowed
 	}
 }
 
-material 3D-Diggers/fir01 : PBRBasic
+material 3D-Diggers/fir01 : PbrBasic
 {
     receive_shadows off
     technique

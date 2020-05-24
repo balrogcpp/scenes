@@ -6,7 +6,29 @@ import PbrIbl/Unity from pbr-unity.material
 import PbrExtIbl/Unity from pbr-unity.material
 import PbrTerrain from pbr-terrain.material
 
-material Cube : PbrExtIbl/Unity
+material Cube_ : PbrIbl/Unity
+{
+	technique
+	{
+		pass
+		{
+            texture_unit Albedo
+            {
+                texture grimy-metal-albedo.dds
+            }
+            texture_unit Normal
+            {
+                texture grimy-metal-normal-ogl.dds
+            }
+            texture_unit MetallicRougness
+            {
+                texture reda.dds
+            }
+		}
+    }
+}
+
+material Well : Pbr/Unity
 {
 	technique
 	{
@@ -54,7 +76,29 @@ material Stone : Pbr/Unity
     }
 }
 
-material Cube_ : Pbr/Unity
+material Well_ : Pbr/Unity
+{
+	technique
+	{
+		pass
+		{
+            texture_unit Albedo
+            {
+                texture white.dds
+            }
+            texture_unit Normal
+            {
+                texture grimy-metal-normal-ogl.dds
+            }
+            texture_unit MetallicRougness
+            {
+                texture reda.dds
+            }
+		}
+    }
+}
+
+material Cube : Pbr/Unity
 {
 	technique
 	{
