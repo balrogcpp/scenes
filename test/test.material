@@ -151,8 +151,8 @@ material Plane : PbrTerrain
 	{
 		pass
 		{
-            //ambient 0.197756 0.546205 0.8 1.0
-            //diffuse 1 1 1 1.0
+            //ambient 0.2 0.2 0.2 1.0
+            //diffuse  0.79 0.59 0.18
             //specular 1 1 1 1.0 12.5
             //emissive 0.0 0.0 0.0 1.0
 
@@ -161,11 +161,11 @@ material Plane : PbrTerrain
 
             texture_unit AlbedoParallax
             {
-                texture white.dds
+                texture Sand_Diffuse.dds
             }
             texture_unit Normal
             {
-                texture blue.dds
+                texture Sand_Normal.dds
             }
             texture_unit MetallicRougness
             {

@@ -72,42 +72,8 @@
 <!--                </userData>-->
 <!--            </entity>-->
 <!--        </node>-->
-        <node name="Cube.008">
-            <position x="1" y="5" z="-4.125822"/>
-            <rotation qw="1.000000" qx="0.000000" qy="0.000000" qz="0.000000"/>
-            <scale x="1.734902" y="1.734902" z="1.734902"/>
-            <userData>
-                <property data='&lt;bpy id prop: owner="OBCube.008", name="ant_landscape", address=0x7f2ed97f0d48&gt;'
-                          name="ant_landscape" type="IDPropertyGroup"/>
-            </userData>
-            <entity meshFile="Thing.mesh" name="Thing" material="Stone">
-                <userData>
-                    <property data="1.0" name="mass" type="float"/>
-                    <property data="1.0" name="mass_radius" type="float"/>
-                    <property data="STATIC" name="physics_type" type="str"/>
-                    <property data="trimesh" name="proxy" type="str"/>
-                    <property data="False" name="actor" type="bool"/>
-                    <property data="False" name="ghost" type="bool"/>
-                    <property data="0.0" name="velocity_min" type="float"/>
-                    <property data="0.0" name="velocity_max" type="float"/>
-                    <property data="False" name="lock_trans_x" type="bool"/>
-                    <property data="False" name="lock_trans_y" type="bool"/>
-                    <property data="False" name="lock_trans_z" type="bool"/>
-                    <property data="False" name="lock_rot_x" type="bool"/>
-                    <property data="False" name="lock_rot_y" type="bool"/>
-                    <property data="False" name="lock_rot_z" type="bool"/>
-                    <property data="False" name="anisotropic_friction" type="bool"/>
-                    <property data="1.0" name="friction_x" type="float"/>
-                    <property data="1.0" name="friction_y" type="float"/>
-                    <property data="1.0" name="friction_z" type="float"/>
-                    <property data="0.03999999910593033" name="damping_trans" type="float"/>
-                    <property data="0.10000000149011612" name="damping_rot" type="float"/>
-                    <property data="0.4000000059604645" name="inertia_tensor" type="float"/>
-                </userData>
-            </entity>
-        </node>
-        <node name="Cube.007">
-            <position x="0" y="-0.1" z="0"/>
+        <node name="Tree1">
+            <position x="0" y="0" z="0"/>
             <rotation qw="1.000000" qx="0.000000" qy="0.000000" qz="0.000000"/>
             <scale x="0.1" y="0.1" z="0.1"/>
             <userData>
@@ -140,20 +106,20 @@
                 </userData>
             </entity>
         </node>
-        <node name="Cube.006">
-            <position x="-45.967056" y="12.898122" z="12.797693"/>
+        <node name="Tree2">
+            <position x="15" y="0" z="0"/>
             <rotation qw="1.000000" qx="0.000000" qy="0.000000" qz="0.000000"/>
-            <scale x="1.734902" y="1.734902" z="1.734902"/>
+            <scale x="0.1" y="0.1" z="0.1"/>
             <userData>
-                <property data='&lt;bpy id prop: owner="OBCube.006", name="ant_landscape", address=0x7f2ee09e9e88&gt;'
+                <property data='&lt;bpy id prop: owner="OBCube.007", name="ant_landscape", address=0x7f2ed97f00c8&gt;'
                           name="ant_landscape" type="IDPropertyGroup"/>
             </userData>
-            <entity meshFile="Cerberus00_Fixed.mesh" name="Cube">
+            <entity meshFile="fir14_25.mesh" name="Tree">
                 <userData>
-                    <property data="100.0" name="mass" type="float"/>
+                    <property data="1.0" name="mass" type="float"/>
                     <property data="1.0" name="mass_radius" type="float"/>
-                    <property data="dynamic" name="physics_type" type="str"/>
-                    <property data="box" name="proxy" type="str"/>
+                    <property data="STATIC" name="physics_type" type="str"/>
+                    <property data="trimesh" name="proxy" type="str"/>
                     <property data="False" name="actor" type="bool"/>
                     <property data="False" name="ghost" type="bool"/>
                     <property data="0.0" name="velocity_min" type="float"/>
@@ -174,20 +140,146 @@
                 </userData>
             </entity>
         </node>
-        <node name="Cube.005">
-            <position x="-38.460693" y="7" z="23.671621"/>
+        <node name="old_car.004" >
+            <position x="1.429337" y="1.771332" z="0.006431" />
+            <rotation qw="1.000000" qx="0.000000" qy="0.000000" qz="-0.000000" />
+            <scale x="1.000000" y="1.000000" z="1.000000" />
+            <entity meshFile="old_car.mesh" name="old_car.004" >
+                <userData >
+                    <property data="1.0" name="mass" type="float" />
+                    <property data="1.0" name="mass_radius" type="float" />
+                    <property data="STATIC" name="physics_type" type="str" />
+                    <property data="trimesh" name="proxy" type="str"/>
+                    <property data="False" name="actor" type="bool" />
+                    <property data="False" name="ghost" type="bool" />
+                    <property data="0.0" name="velocity_min" type="float" />
+                    <property data="0.0" name="velocity_max" type="float" />
+                    <property data="False" name="lock_trans_x" type="bool" />
+                    <property data="False" name="lock_trans_y" type="bool" />
+                    <property data="False" name="lock_trans_z" type="bool" />
+                    <property data="False" name="lock_rot_x" type="bool" />
+                    <property data="False" name="lock_rot_y" type="bool" />
+                    <property data="False" name="lock_rot_z" type="bool" />
+                    <property data="False" name="anisotropic_friction" type="bool" />
+                    <property data="1.0" name="friction_x" type="float" />
+                    <property data="1.0" name="friction_y" type="float" />
+                    <property data="1.0" name="friction_z" type="float" />
+                    <property data="0.03999999910593033" name="damping_trans" type="float" />
+                    <property data="0.10000000149011612" name="damping_rot" type="float" />
+                    <property data="0.4000000059604645" name="inertia_tensor" type="float" />
+                </userData>
+            </entity>
+        </node>
+        <node name="old_car.003" >
+            <position x="-4.123539" y="0.073269" z="1.185841" />
+            <rotation qw="0.988019" qx="-0.069527" qy="-0.033238" qz="-0.133719" />
+            <scale x="1.000000" y="1.000000" z="1.000000" />
+            <entity meshFile="old_car.mesh" name="old_car.003" >
+                <userData >
+                    <property data="1.0" name="mass" type="float" />
+                    <property data="1.0" name="mass_radius" type="float" />
+                    <property data="dynamic" name="physics_type" type="str" />
+                    <property data="False" name="actor" type="bool" />
+                    <property data="False" name="ghost" type="bool" />
+                    <property data="0.0" name="velocity_min" type="float" />
+                    <property data="0.0" name="velocity_max" type="float" />
+                    <property data="False" name="lock_trans_x" type="bool" />
+                    <property data="False" name="lock_trans_y" type="bool" />
+                    <property data="False" name="lock_trans_z" type="bool" />
+                    <property data="False" name="lock_rot_x" type="bool" />
+                    <property data="False" name="lock_rot_y" type="bool" />
+                    <property data="False" name="lock_rot_z" type="bool" />
+                    <property data="False" name="anisotropic_friction" type="bool" />
+                    <property data="1.0" name="friction_x" type="float" />
+                    <property data="1.0" name="friction_y" type="float" />
+                    <property data="1.0" name="friction_z" type="float" />
+                    <property data="0.03999999910593033" name="damping_trans" type="float" />
+                    <property data="0.10000000149011612" name="damping_rot" type="float" />
+                    <property data="0.4000000059604645" name="inertia_tensor" type="float" />
+                </userData>
+            </entity>
+        </node>
+<!--        <node name="old_car.003" >-->
+<!--            <position x="-4.123539" y="50.0" z="1.185841" />-->
+<!--            <direction x="4.123539" y="-50.0" z="-1.185841" />-->
+<!--            <scale x="1.000000" y="1.000000" z="1.000000" />-->
+<!--            <light name="Spot" powerScale="50.0" type="spot" castShadows="true">-->
+<!--                <lightRange falloff="1.0" inner="30" outer="50"/>-->
+<!--                <lightAttenuation constant="0.0" linear="0.1" quadratic="0.0" range="100"/>-->
+<!--            </light>-->
+<!--        </node>-->
+        <node name="old_car.002" >
+            <position x="5.879262" y="-0.119032" z="-0.516041" />
+            <rotation qw="1.000000" qx="0.000000" qy="0.000000" qz="-0.000000" />
+            <scale x="1.000000" y="1.000000" z="1.000000" />
+            <entity meshFile="old_car.mesh" name="old_car.002" >
+                <userData >
+                    <property data="1.0" name="mass" type="float" />
+                    <property data="1.0" name="mass_radius" type="float" />
+                    <property data="STATIC" name="physics_type" type="str" />
+                    <property data="False" name="actor" type="bool" />
+                    <property data="False" name="ghost" type="bool" />
+                    <property data="0.0" name="velocity_min" type="float" />
+                    <property data="0.0" name="velocity_max" type="float" />
+                    <property data="False" name="lock_trans_x" type="bool" />
+                    <property data="False" name="lock_trans_y" type="bool" />
+                    <property data="False" name="lock_trans_z" type="bool" />
+                    <property data="False" name="lock_rot_x" type="bool" />
+                    <property data="False" name="lock_rot_y" type="bool" />
+                    <property data="False" name="lock_rot_z" type="bool" />
+                    <property data="False" name="anisotropic_friction" type="bool" />
+                    <property data="1.0" name="friction_x" type="float" />
+                    <property data="1.0" name="friction_y" type="float" />
+                    <property data="1.0" name="friction_z" type="float" />
+                    <property data="0.03999999910593033" name="damping_trans" type="float" />
+                    <property data="0.10000000149011612" name="damping_rot" type="float" />
+                    <property data="0.4000000059604645" name="inertia_tensor" type="float" />
+                </userData>
+            </entity>
+        </node>
+        <node name="old_car.001" >
+            <position x="2.817478" y="-0.131268" z="0.016098" />
+            <rotation qw="1.000000" qx="0.000000" qy="0.000000" qz="-0.000000" />
+            <scale x="1.000000" y="1.000000" z="1.000000" />
+            <entity meshFile="old_car.mesh" name="old_car.001" >
+                <userData >
+                    <property data="1.0" name="mass" type="float" />
+                    <property data="1.0" name="mass_radius" type="float" />
+                    <property data="STATIC" name="physics_type" type="str" />
+                    <property data="False" name="actor" type="bool" />
+                    <property data="False" name="ghost" type="bool" />
+                    <property data="0.0" name="velocity_min" type="float" />
+                    <property data="0.0" name="velocity_max" type="float" />
+                    <property data="False" name="lock_trans_x" type="bool" />
+                    <property data="False" name="lock_trans_y" type="bool" />
+                    <property data="False" name="lock_trans_z" type="bool" />
+                    <property data="False" name="lock_rot_x" type="bool" />
+                    <property data="False" name="lock_rot_y" type="bool" />
+                    <property data="False" name="lock_rot_z" type="bool" />
+                    <property data="False" name="anisotropic_friction" type="bool" />
+                    <property data="1.0" name="friction_x" type="float" />
+                    <property data="1.0" name="friction_y" type="float" />
+                    <property data="1.0" name="friction_z" type="float" />
+                    <property data="0.03999999910593033" name="damping_trans" type="float" />
+                    <property data="0.10000000149011612" name="damping_rot" type="float" />
+                    <property data="0.4000000059604645" name="inertia_tensor" type="float" />
+                </userData>
+            </entity>
+        </node>
+        <node name="Cube.006">
+            <position x="-45.967056" y="12.898122" z="12.797693"/>
             <rotation qw="1.000000" qx="0.000000" qy="0.000000" qz="0.000000"/>
             <scale x="1.734902" y="1.734902" z="1.734902"/>
             <userData>
-                <property data='&lt;bpy id prop: owner="OBCube.005", name="ant_landscape", address=0x7f2ed9fb47a8&gt;'
+                <property data='&lt;bpy id prop: owner="OBCube.006", name="ant_landscape", address=0x7f2ee09e9e88&gt;'
                           name="ant_landscape" type="IDPropertyGroup"/>
             </userData>
-            <entity meshFile="Well.mesh" name="Well">
+            <entity meshFile="Cerberus00_Fixed.mesh" name="Cube">
                 <userData>
                     <property data="100.0" name="mass" type="float"/>
                     <property data="1.0" name="mass_radius" type="float"/>
-                    <property data="STATIC" name="physics_type" type="str"/>
-                    <property data="trimesh" name="proxy" type="str"/>
+                    <property data="dynamic" name="physics_type" type="str"/>
+                    <property data="box" name="proxy" type="str"/>
                     <property data="False" name="actor" type="bool"/>
                     <property data="False" name="ghost" type="bool"/>
                     <property data="0.0" name="velocity_min" type="float"/>
@@ -250,7 +342,7 @@
                 <property data='&lt;bpy id prop: owner="OBCube.003", name="ant_landscape", address=0x7f2ed88c95c8&gt;'
                           name="ant_landscape" type="IDPropertyGroup"/>
             </userData>
-            <entity meshFile="Cube.mesh" name="Cube">
+            <entity meshFile="Sinbad.mesh" name="Cube">
                 <userData>
                     <property data="100.0" name="mass" type="float"/>
                     <property data="1.0" name="mass_radius" type="float"/>
@@ -284,7 +376,7 @@
                 <property data='&lt;bpy id prop: owner="OBCube.002", name="ant_landscape", address=0x7f2ee09e93e8&gt;'
                           name="ant_landscape" type="IDPropertyGroup"/>
             </userData>
-            <entity meshFile="Cube.mesh" name="Cube">
+            <entity meshFile="Sword.mesh" name="Cube">
                 <userData>
                     <property data="100.0" name="mass" type="float"/>
                     <property data="1.0" name="mass_radius" type="float"/>
@@ -408,7 +500,7 @@
                     <property data="0.03999999910593033" name="damping_trans" type="float"/>
                     <property data="0.10000000149011612" name="damping_rot" type="float"/>
                     <property data="0.4000000059604645" name="inertia_tensor" type="float"/>
-                </userData>roup_)
+                </userData>
             </entity>
         </node>
         <node name="DamagedHelmet3">
@@ -453,7 +545,7 @@
                 <property data='&lt;bpy id prop: owner="OBCube", name="ant_landscape", address=0x7f2ee09d2528&gt;'
                           name="ant_landscape" type="IDPropertyGroup"/>
             </userData>
-            <entity meshFile="Cube.mesh" name="Cube">
+            <entity meshFile="rock08.mesh" name="Cube">
                 <userData>
                     <property data="1.0" name="mass" type="float"/>
                     <property data="1.0" name="mass_radius" type="float"/>
@@ -479,21 +571,35 @@
                 </userData>
             </entity>
         </node>
-        <node name="Sun">
-            <position x="140.659888" y="260.704975" z="12.950829"/>
-            <rotation qw="1.695459" qx="-0.695459" qy="0.127815" qz="-0.127815"/>
-            <scale x="1.000000" y="1.000000" z="1.000000"/>
-            <userData>
-                <property data='&lt;bpy id prop: owner="OBSun", name="ant_landscape", address=0x7f2efbcfe668&gt;'
-                          name="ant_landscape" type="IDPropertyGroup"/>
-            </userData>
-            <light name="Sun" powerScale="5" type="directional" castShadows="true">
-                <colourDiffuse b="1.0" g="1.0" r="1.0"/>
-                <colourSpecular b="1.0" g="1.0" r="1.0"/>
-                <lightRange falloff="1.0" inner="10" outer="500"/>-->
-                <lightAttenuation constant="0.0" linear="0.5" quadratic="0.0" range="1000"/>
-            </light>
-        </node>
+<!--        <node name="Sun">-->
+<!--            <position x="14.659888" y="26.704975" z="12.950829"/>-->
+<!--            <direction x="-14.659888" y="-26.704975" z="-12.950829"/>-->
+<!--            <scale x="1.000000" y="1.000000" z="1.000000"/>-->
+<!--            <userData>-->
+<!--                <property data='&lt;bpy id prop: owner="OBSun", name="ant_landscape", address=0x7f2efbcfe668&gt;'-->
+<!--                          name="ant_landscape" type="IDPropertyGroup"/>-->
+<!--            </userData>-->
+<!--            <light name="Sun" powerScale="10" type="directional" castShadows="true">-->
+<!--                <colourDiffuse b="1.0" g="1.0" r="1.0"/>-->
+<!--                <colourSpecular b="1.0" g="1.0" r="1.0"/>-->
+<!--                <lightRange falloff="1.0" inner="10" outer="50"/>&ndash;&gt;-->
+<!--                <lightAttenuation constant="0.0" linear="0.5" quadratic="0.0" range="1000"/>-->
+<!--            </light>-->
+<!--        </node>-->
+    <node name="Sun">
+        <position x="40.659888" y="60.704975" z="12.950829"/>
+        <direction x="-40.659888" y="-60.704975" z="-12.950829"/>
+        <userData>
+            <property data='&lt;bpy id prop: owner="OBSun", name="ant_landscape", address=0x7f2efbcfe668&gt;'
+                      name="ant_landscape" type="IDPropertyGroup"/>
+        </userData>
+        <light name="Sun" powerScale="10" type="directional" castShadows="true">
+            <colourDiffuse b="1.0" g="1.0" r="1.0"/>
+            <colourSpecular b="1.0" g="1.0" r="1.0"/>
+            <lightRange falloff="1.0" inner="30" outer="50"/>-->
+            <lightAttenuation constant="0.0" linear="0.5" quadratic="0.0" range="1000"/>
+        </light>
+    </node>
         <node name="Camera">
             <position x="0.000000" y="10.000000" z="5.000000"/>
             <rotation qw="1.000000" qx="0.000000" qy="0.000000" qz="0.000000"/>
@@ -503,17 +609,17 @@
                           name="ant_landscape" type="IDPropertyGroup"/>
             </userData>
             <camera fov="1" name="Camera.001" projectionType="perspective">
-                <clipping far="2000.0" near="0.01"/>
-<!--                <light name="Spot" powerScale="1.0" type="spot" castShadows="false">-->
-<!--                    <lightRange falloff="1.0" inner="80" outer="90"/>-->
-<!--                    <lightAttenuation constant="0.0" linear="0.05" quadratic="0.0" range="50"/>-->
+                <clipping far="10000.0" near="0.01"/>
+<!--                <light name="Spot" powerScale="5.0" type="spot" castShadows="false">-->
+<!--                    <lightRange falloff="1.0" inner="30" outer="50"/>-->
+<!--                    <lightAttenuation constant="0.0" linear="0.05" quadratic="0.0" range="500"/>-->
 <!--                </light>-->
             </camera>
-            <particleSystem name="Rain" template="Examples/Rain" attachedCamera="true"/>
+<!--            <particleSystem name="Rain" template="Examples/Rain" attachedCamera="true"/>-->
         </node>
-        <node name="Plane">
-            <plane material="Reflection" width="200" reflection="true" distance="7.0"/>
-        </node>
+<!--        <node name="Plane">-->
+<!--            <plane material="Reflection" width="200" reflection="true" distance="2.0"/>-->
+<!--        </node>-->
     </nodes>
     <externals>
         <item type="material">
@@ -530,14 +636,23 @@
 <!--    <geometry name="plant2" mesh="grass.mesh" range="50" wind="false"/>-->
 <!--    </forest>-->
     <environment>
-        <colourAmbient r="0.05" g="0.05" b="0.05"/>
+        <colourAmbient r="0.2" g="0.2" b="0.2"/>/
+<!--        <colourAmbient r="0.05" g="0.05" b="0.05"/>-->
         <colourBackground b="0.0" g="0.0" r="0.0"/>
-        <fog mode="exp" start="0" end="1000" density="0.003">
-                        <colour r="0.33" g="0.33" b="1" a="1.0"/>
+        <fog mode="exp" start="0" end="1000" density="0.001">
+                        <colour r="0.33" g="0.33" b="1.0" a="1.0"/>
         </fog>
         <skyBox cubemap="OutputCube.dds"/>
     </environment>
-    <terrainGroup worldSize="200" mapSize="129" minBatchSize="65" maxBatchSize="65" inputScale="15">
+    <terrainGroup worldSize="200" mapSize="257" minBatchSize="17" maxBatchSize="65" inputScale="5" tuningMaxPixelError="1">
+        <terrain x="-1" y="-1" heightmap="new_terrain.png" />
+        <terrain x="-1" y="0" heightmap="new_terrain.png" />
+        <terrain x="-1" y="1" heightmap="new_terrain.png" />
+        <terrain x="0" y="-1" heightmap="new_terrain.png" />
         <terrain x="0" y="0" heightmap="new_terrain.png" />
+        <terrain x="0" y="1" heightmap="new_terrain.png" />
+        <terrain x="1" y="-1" heightmap="new_terrain.png" />
+        <terrain x="1" y="0" heightmap="new_terrain.png" />
+        <terrain x="1" y="1" heightmap="new_terrain.png" />
     </terrainGroup>
 </scene>

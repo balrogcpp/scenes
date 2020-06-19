@@ -1,0 +1,212 @@
+import PbrBasic from pbr-basic.material
+import PbrBasicShadow from pbr-basic.material
+
+material Sinbad/Body : PbrBasicShadow
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			texture_unit Albedo
+			{
+				texture sinbad_body.dds
+			}
+
+            //rtshader_system {}
+		}
+	}
+}
+
+material Sinbad/Gold : PbrBasicShadow
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			texture_unit Albedo
+			{
+				texture sinbad_clothes.dds
+			}
+
+        //rtshader_system {}
+		}
+	}
+}
+
+material Sinbad/Sheaths : PbrBasicShadow
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			texture_unit Albedo
+			{
+				texture sinbad_sword.dds
+			}
+
+            //rtshader_system {}
+		}
+	}
+}
+
+material Sinbad/Clothes : PbrBasicShadow
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			texture_unit Albedo
+			{
+				texture sinbad_clothes.dds
+			}
+
+            //rtshader_system {}
+		}
+	}
+}
+
+material Sinbad/Teeth : PbrBasicShadow
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			texture_unit Albedo
+			{
+				texture sinbad_body.dds
+			}
+
+            //rtshader_system {}
+		}
+	}
+}
+
+material Sinbad/Eyes : PbrBasicShadow
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			texture_unit Albedo
+			{
+				texture sinbad_body.dds
+			}
+
+            //rtshader_system {}
+		}
+	}
+}
+
+material Sinbad/Spikes : PbrBasicShadow
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			texture_unit Albedo
+			{
+				texture sinbad_clothes.dds
+			}
+
+            //rtshader_system {}
+		}
+	}
+}
+
+material Sinbad/Blade : PbrBasicShadow
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			texture_unit Albedo
+			{
+				texture sinbad_sword.dds
+			}
+
+            //rtshader_system {}
+		}
+	}
+}
+
+material Sinbad/Ruby : PbrBasicShadow
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			texture_unit Albedo
+			{
+				texture sinbad_sword.dds
+			}
+
+            //rtshader_system {}
+		}
+	}
+}
+
+material Sinbad/Hilt : PbrBasicShadow
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			texture_unit Albedo
+			{
+				texture sinbad_sword.dds
+			}
+
+            //rtshader_system {}
+		}
+	}
+}
+
+material Sinbad/Handle : PbrBasicShadow
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			texture_unit Albedo
+			{
+				texture sinbad_sword.dds
+			}
+
+            //rtshader_system {}
+		}
+	}
+}
+
+material Examples/LightRibbonTrail
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+			scene_blend add
+			depth_write off
+			diffuse vertexcolour
+
+			texture_unit Albedo
+			{
+				texture ribbonband.dds 1d
+				tex_address_mode clamp
+				filtering none
+			}
+
+            rtshader_system {}
+		}
+	}
+}
