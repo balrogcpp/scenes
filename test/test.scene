@@ -611,14 +611,14 @@
         <skyBox cubemap="OutputCube.dds"/>
     </environment>
     <terrainGroup worldSize="200" mapSize="257" minBatchSize="17" maxBatchSize="65" inputScale="25" tuningMaxPixelError="1">
-        <terrain x="-1" y="-1" heightmap="new_terrain.png" />
-        <terrain x="-1" y="0" heightmap="new_terrain.png" />
-        <terrain x="-1" y="1" heightmap="new_terrain.png" />
-        <terrain x="0" y="-1" heightmap="new_terrain.png" />
-        <terrain x="0" y="0" heightmap="new_terrain.png" />
-        <terrain x="0" y="1" heightmap="new_terrain.png" />
-        <terrain x="1" y="-1" heightmap="new_terrain.png" />
-        <terrain x="1" y="0" heightmap="new_terrain.png" />
-        <terrain x="1" y="1" heightmap="new_terrain.png" />
+        <terrain x="-1" y="-1" heightmap="terrain2.png" />
+        <terrain x="-1" y="0" heightmap="terrain2.png" />
+        <terrain x="-1" y="1" heightmap="terrain2.png" />
+        <terrain x="0" y="-1" heightmap="terrain2.png" />
+        <terrain x="0" y="0" heightmap="terrain2.png" />
+        <terrain x="0" y="1" heightmap="terrain2.png" />
+        <terrain x="1" y="-1" heightmap="terrain2.png" />
+        <terrain x="1" y="0" heightmap="terrain2.png" />
+        <terrain x="1" y="1" heightmap="terrain2.png" />
     </terrainGroup>
 </scene>
