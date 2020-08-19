@@ -550,7 +550,7 @@
 <!--            <particleSystem name="Rain" template="Examples/Rain" attachedCamera="true"/>-->
         </node>
         <node name="Plane">
-            <plane material="Reflection" width="200" reflection="true" distance="0.0"/>
+            <plane material="Reflection" width="200" reflection="true" distance="-1.0"/>
         </node>
     </nodes>
     <externals>
