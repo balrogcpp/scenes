@@ -572,7 +572,7 @@
 <!--        <colourAmbient r="0.05" g="0.05" b="0.05"/>-->
 <!--        <colourAmbient r="0.05" g="0.05" b="0.05"/>-->
         <colourBackground b="0.0" g="0.0" r="0.0"/>
-        <fog mode="exp" start="0" end="1000" density="0.001">
+        <fog mode="exp" start="0" end="1000" density="0.01">
                         <colour r="0.33" g="0.33" b="1.0" a="1.0"/>
         </fog>
         <skyBox cubemap="OutputCube.dds"/>
