@@ -542,10 +542,10 @@
             </userData>
             <camera fov="1" name="Camera.001" projectionType="perspective">
                 <clipping far="10000.0" near="0.01"/>
-<!--                <light name="Spot" powerScale="5.0" type="spot" castShadows="false">-->
-<!--                    <lightRange falloff="1.0" inner="30" outer="50"/>-->
-<!--                    <lightAttenuation constant="0.0" linear="0.05" quadratic="0.0" range="500"/>-->
-<!--                </light>-->
+                <light name="Spot" powerScale="5.0" type="spot" castShadows="false">
+                    <lightRange falloff="1.0" inner="30" outer="50"/>
+                    <lightAttenuation constant="0.0" linear="0.05" quadratic="0.0" range="500"/>
+                </light>
             </camera>
 <!--            <particleSystem name="Rain" template="Examples/Rain" attachedCamera="true"/>-->
         </node>
@@ -568,11 +568,10 @@
 <!--    <geometry name="plant2" mesh="grass.mesh" range="50" wind="false"/>-->
 <!--    </forest>-->
     <environment>
-        <colourAmbient r="0.2" g="0.2" b="0.2"/>/
-<!--        <colourAmbient r="0.05" g="0.05" b="0.05"/>-->
-<!--        <colourAmbient r="0.05" g="0.05" b="0.05"/>-->
+<!--        <colourAmbient r="0.2" g="0.2" b="0.2"/>/-->
+        <colourAmbient r="0.01" g="0.05" b="0.05"/>
         <colourBackground b="0.0" g="0.0" r="0.0"/>
-        <fog mode="exp" start="0" end="1000" density="0.01">
+        <fog mode="exp" density="0.01">
                         <colour r="0.33" g="0.33" b="1.0" a="1.0"/>
         </fog>
         <skyBox cubemap="OutputCube.dds"/>
