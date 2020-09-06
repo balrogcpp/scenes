@@ -569,8 +569,9 @@
 <!--    </forest>-->
     <environment>
 <!--        <colourAmbient r="0.2" g="0.2" b="0.2"/>/-->
-        <colourAmbient r="0.01" g="0.05" b="0.05"/>
+        <colourAmbient r="0.05" g="0.05" b="0.05"/>
         <colourBackground b="0.0" g="0.0" r="0.0"/>
+        <shadowColor b="0.0" g="0.0" r="0.2"/>
         <fog mode="exp" density="0.01">
                         <colour r="0.33" g="0.33" b="1.0" a="1.0"/>
         </fog>
