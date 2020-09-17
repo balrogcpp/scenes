@@ -144,7 +144,7 @@
                 <userData>
                     <property data="1.0" name="mass" type="float"/>
                     <property data="1.0" name="mass_radius" type="float"/>
-                    <property data="dynamic" name="physics_type" type="str"/>
+                    <property data="STATIC" name="physics_type" type="str"/>
                     <property data="False" name="actor" type="bool"/>
                     <property data="False" name="ghost" type="bool"/>
                     <property data="0.0" name="velocity_min" type="float"/>
@@ -465,7 +465,7 @@
             </light>
         </node>
         <node name="Camera">
-            <position x="0.000000" y="20.000000" z="5.000000"/>
+            <position x="0.000000" y="40.000000" z="5.000000"/>
             <rotation qw="1.000000" qx="0.000000" qy="0.000000" qz="0.000000"/>
             <scale x="1.000000" y="1.000000" z="1.000000"/>
             <userData>
@@ -479,19 +479,19 @@
                 <!--                    <lightAttenuation constant="0.0" linear="0.05" quadratic="0.0" range="500"/>-->
                 <!--                </light>-->
             </camera>
-            <particleSystem name="Rain" template="Examples/Rain" attachedCamera="true"/>
+<!--            <particleSystem name="Rain" template="Examples/Rain" attachedCamera="true"/>-->
         </node>
-        <node name="Plane">
-            <plane material="Reflection" width="200" reflection="true" distance="0.0"/>
-        </node>
+        <!--        <node name="Plane">-->
+        <!--            <plane material="Reflection" width="200" reflection="true" distance="0.1"/>-->
+        <!--        </node>-->
     </nodes>
     <externals>
         <item type="material">
             <file name="Cube"/>
         </item>
-        <item type="material">
-            <file name="Plane"/>
-        </item>
+        <!--        <item type="material">-->
+        <!--            <file name="Plane"/>-->
+        <!--        </item>-->
     </externals>
     <forest>
         <geometry name="grass" mesh="grass.mesh" range="50" wind="false"/>
@@ -500,20 +500,21 @@
         <colourAmbient r="0.05" g="0.05" b="0.05"/>
         <colourBackground b="0.0" g="0.0" r="0.0"/>
         <shadowColor b="0.0" g="0.0" r="0.2"/>
-        <fog mode="exp" density="0.005">
-            <colour r="1.0" g="0.33" b="1.0"/>
+        <fog mode="exp" density="0.001">
+            <colour r="0.33" g="0.7" b=""/>
         </fog>
         <skyBox cubemap="OutputCube.dds"/>
     </environment>
-    <!--    <terrainGroup worldSize="200" mapSize="257" minBatchSize="17" maxBatchSize="65" inputScale="25" tuningMaxPixelError="1">-->
-    <!--        <terrain x="-1" y="-1" heightmap="terrain2.png" />-->
-    <!--        <terrain x="-1" y="0" heightmap="terrain2.png" />-->
-    <!--        <terrain x="-1" y="1" heightmap="terrain2.png" />-->
-    <!--        <terrain x="0" y="-1" heightmap="terrain2.png" />-->
-    <!--        <terrain x="0" y="0" heightmap="terrain2.png" />-->
-    <!--        <terrain x="0" y="1" heightmap="terrain2.png" />-->
-    <!--        <terrain x="1" y="-1" heightmap="terrain2.png" />-->
-    <!--        <terrain x="1" y="0" heightmap="terrain2.png" />-->
-    <!--        <terrain x="1" y="1" heightmap="terrain2.png" />-->
-    <!--    </terrainGroup>-->
+    <terrainGroup worldSize="500" mapSize="513" minBatchSize="17" maxBatchSize="65" inputScale="50"
+                  tuningMaxPixelError="1">
+<!--        <terrain x="-1" y="-1" heightmap="terrain2.png"/>-->
+<!--        <terrain x="-1" y="0" heightmap="terrain2.png"/>-->
+<!--        <terrain x="-1" y="1" heightmap="terrain2.png"/>-->
+<!--        <terrain x="0" y="-1" heightmap="terrain2.png"/>-->
+        <terrain x="0" y="0" heightmap="terrain2.png"/>
+<!--        <terrain x="0" y="1" heightmap="terrain2.png"/>-->
+<!--        <terrain x="1" y="-1" heightmap="terrain2.png"/>-->
+<!--        <terrain x="1" y="0" heightmap="terrain2.png"/>-->
+<!--        <terrain x="1" y="1" heightmap="terrain2.png"/>-->
+    </terrainGroup>
 </scene>

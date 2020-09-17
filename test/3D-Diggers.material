@@ -13,10 +13,11 @@ material GrassCustom : PbrForest_Shadowed
         cull_hardware none
         cull_software none
         alpha_rejection greater_equal 128
+        ambient 0.05 0.05 0.05
 
         texture_unit Albedo
         {
-            texture grassWalpha.dds
+            texture grass.png
         }
       }
 	}
