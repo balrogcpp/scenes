@@ -12,12 +12,31 @@ material GrassCustom : PbrForest_Shadowed
       {
         cull_hardware none
         cull_software none
-        alpha_rejection greater_equal 128
+        alpha_rejection greater_equal 127
         ambient 0.05 0.05 0.05
 
         texture_unit Albedo
         {
-            texture grass.png
+            texture Grass_A.png
+        }
+      }
+	}
+}
+
+material GrassCustom2 : PbrForest_Shadowed
+{
+    technique
+    {
+      pass
+      {
+        cull_hardware none
+        cull_software none
+        alpha_rejection greater_equal 127
+        ambient 0.05 0.05 0.05
+
+        texture_unit Albedo
+        {
+            texture Grass_B.png
         }
       }
 	}

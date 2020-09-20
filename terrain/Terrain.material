@@ -1,0 +1,31 @@
+import PbrTerrain from pbr-terrain.material
+
+material Terrain : PbrTerrain
+{
+	technique
+	{
+		pass
+		{
+            //ambient 0.2 0.2 0.2 1.0
+            diffuse  0.79 0.59 0.18
+            //specular 1 1 1 1.0 12.5
+            //emissive 0.0 0.0 0.0 1.0
+
+            //cull_hardware none
+            //cull_software none
+
+            texture_unit Albedo
+            {
+                texture Rock20_diffspec.dds
+            }
+            texture_unit Normal
+            {
+                texture Rock20_normheight.dds
+            }
+            texture_unit MetallicRougness
+            {
+                texture black.dds
+            }
+		}
+    }
+}

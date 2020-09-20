@@ -4,7 +4,6 @@ import Pbr/Unity from pbr-unity.material
 import PbrReflection/Unity from pbr-unity.material
 import PbrIbl/Unity from pbr-unity.material
 import PbrExtIbl/Unity from pbr-unity.material
-import PbrTerrain from pbr-terrain.material
 
 material Cube_ : PbrIbl/Unity
 {
@@ -140,36 +139,6 @@ material Reflection : PbrReflection/Unity
             texture_unit MetallicRougness
             {
                 texture grimy-metal-metallic.dds
-            }
-		}
-    }
-}
-
-material Plane : PbrTerrain
-{
-	technique
-	{
-		pass
-		{
-            //ambient 0.2 0.2 0.2 1.0
-            //diffuse  0.79 0.59 0.18
-            //specular 1 1 1 1.0 12.5
-            //emissive 0.0 0.0 0.0 1.0
-
-            //cull_hardware none
-            //cull_software none
-
-            texture_unit AlbedoParallax
-            {
-                texture Sand_Diffuse.dds
-            }
-            texture_unit Normal
-            {
-                texture Sand_Normal.dds
-            }
-            texture_unit MetallicRougness
-            {
-                texture black.dds
             }
 		}
     }
