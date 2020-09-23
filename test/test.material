@@ -49,32 +49,6 @@ material Well : Pbr/Unity
     }
 }
 
-material Stone : Pbr/Unity
-{
-	technique
-	{
-		pass
-		{
-
-		    //cull_hardware none
-            //cull_software none
-
-            texture_unit Albedo
-            {
-                texture grimy-metal-albedo.dds
-            }
-            texture_unit Normal
-            {
-                texture grimy-metal-normal-ogl.dds
-            }
-            texture_unit MetallicRougness
-            {
-                texture grimy-metal-metallic.dds
-            }
-		}
-    }
-}
-
 material Well_ : Pbr/Unity
 {
 	technique
@@ -92,29 +66,6 @@ material Well_ : Pbr/Unity
             texture_unit MetallicRougness
             {
                 texture reda.dds
-            }
-		}
-    }
-}
-
-material Cube : Pbr/Unity
-{
-	technique
-	{
-		pass
-		{
-
-            texture_unit Albedo
-            {
-                texture grimy-metal-albedo.dds
-            }
-            texture_unit Normal
-            {
-                texture grimy-metal-normal-ogl.dds
-            }
-            texture_unit MetallicRougness
-            {
-                texture grimy-metal-metallic.dds
             }
 		}
     }

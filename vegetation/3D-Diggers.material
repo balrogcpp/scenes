@@ -4,8 +4,9 @@ import Pbr/Unreal from pbr-ue.material
 import Pbr/Unity from pbr-unity.material
 import PbrBasic from pbr-basic.material
 
-material GrassCustom : PbrForest_Shadowed
+material GrassCustom : PbrForest
 {
+receive_shadows off
     technique
     {
       pass
@@ -13,18 +14,18 @@ material GrassCustom : PbrForest_Shadowed
         cull_hardware none
         cull_software none
         alpha_rejection greater_equal 127
-        ambient 0.05 0.05 0.05
 
         texture_unit Albedo
         {
-            texture Grass_A.png
+            texture Grass_A.dds
         }
       }
 	}
 }
 
-material GrassCustom2 : PbrForest_Shadowed
+material GrassCustom2 : PbrForest
 {
+receive_shadows off
     technique
     {
       pass
@@ -32,11 +33,10 @@ material GrassCustom2 : PbrForest_Shadowed
         cull_hardware none
         cull_software none
         alpha_rejection greater_equal 127
-        ambient 0.05 0.05 0.05
 
         texture_unit Albedo
         {
-            texture Grass_B.png
+            texture Grass_B.dds
         }
       }
 	}
@@ -45,12 +45,11 @@ material GrassCustom2 : PbrForest_Shadowed
 material 3D-Diggers/fir01 : PbrBasic
 {
     receive_shadows off
+    transparency_casts_shadows on
     technique
     {
       pass
       {
-        //cull_hardware none
-        //cull_software none
         alpha_rejection greater_equal 128
         ambient 0.05 0.05 0.05
 
