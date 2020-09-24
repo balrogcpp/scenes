@@ -1,0 +1,137 @@
+import PbrForest from Forest.material
+import PbrForest_Shadowed from Forest.material
+import Pbr from PBR.material
+import PbrBasic from particles.material
+
+material GrassCustom : PbrForest_Shadowed
+{
+    receive_shadows on
+    technique
+    {
+      pass
+      {
+        ambient 0.2 0.2 0.2
+        cull_hardware none
+        cull_software none
+        alpha_rejection greater_equal 127
+
+        texture_unit Albedo
+        {
+            texture Grass_A.dds
+        }
+      }
+	}
+}
+
+material GrassCustom2 : PbrForest_Shadowed
+{
+    receive_shadows off
+    technique
+    {
+      pass
+      {
+        cull_hardware none
+        cull_software none
+        alpha_rejection greater_equal 127
+
+        texture_unit Albedo
+        {
+            texture Grass_B.dds
+        }
+      }
+	}
+}
+
+material 3D-Diggers/fir01 : PbrForest
+{
+    receive_shadows off
+    transparency_casts_shadows on
+    technique
+    {
+      pass
+      {
+        alpha_rejection greater_equal 128
+        ambient 0.05 0.05 0.05
+
+        texture_unit Albedo
+        {
+            texture fir01.dds
+        }
+
+      }
+	}
+}
+
+material 3D-Diggers/fir02 : PbrForest
+{
+    receive_shadows off
+    technique
+    {
+      pass
+      {
+        texture_unit Albedo
+        {
+            texture white-spruce-tree-bark-albedo.dds
+        }
+      }
+	}
+}
+
+material 3D-Diggers/farn01 : PbrForest
+{
+    receive_shadows off
+    technique
+    {
+      pass
+      {
+        alpha_rejection greater_equal 128
+        texture_unit Albedo
+        {
+            texture farn01.dds
+        }
+	}
+	}
+}
+
+material 3D-Diggers/farn02 : PbrForest
+{
+    technique
+    {
+      pass
+      {
+        texture_unit Albedo
+        {
+            tex_address_mode clamp
+            texture farn02.dds
+        }
+	}
+	}
+}
+
+material 3D-Diggers/plant1 : PbrForest
+{
+    technique
+    {
+      pass
+      {
+        texture_unit Albedo
+        {
+            texture plant1.dds
+        }
+	    }
+    }
+}
+
+material 3D-Diggers/plant2 : PbrForest
+{
+    technique
+    {
+      pass
+      {
+        texture_unit Albedo
+        {
+            texture plant2.dds
+        }
+       }
+	}
+}

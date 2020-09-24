@@ -1,0 +1,36 @@
+import Pbr from PBR.material
+
+material Cube : Pbr
+{
+	technique
+	{
+		pass
+		{
+		    diffuse 0 1 0
+            texture_unit Albedo
+            {
+                texture foam-grip1-albedo.dds
+            }
+            texture_unit Normal
+            {
+                texture foam-grip1-normal-dx1.dds
+            }
+            texture_unit Metalness
+            {
+                texture foam-grip1-metallic.png
+            }
+            texture_unit Roughness
+            {
+                texture foam-grip1-roughness.dds
+            }
+            texture_unit Emissive
+            {
+                texture black.dds
+            }
+            texture_unit AmbientOcclusion
+            {
+                texture foam-grip1-ao.dds
+            }
+		}
+    }
+}
