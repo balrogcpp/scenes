@@ -1,7 +1,7 @@
 import PbrForest from Forest.material
 import PbrForest_Shadowed from Forest.material
 import Pbr from PBR.material
-import PbrBasic from particles.material
+import PbrBasic from basic.material
 
 material GrassCustom : PbrForest_Shadowed
 {
