@@ -8,15 +8,15 @@ material Terrain : PbrTerrain
 		{
             texture_unit Albedo
             {
-                texture Rock20_diffspec.dds
+                texture white.dds
             }
             texture_unit Normal
             {
-                texture Rock20_normheight.dds
+                texture blue.dds
             }
             texture_unit Metalness
             {
-                texture black.dds
+                texture white.dds
             }
             texture_unit Roughness
             {
