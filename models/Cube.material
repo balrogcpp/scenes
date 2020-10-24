@@ -1,21 +1,5 @@
-import Pbr from PBR.material
-import PbrIbl from PBR.material
-
-material Cube_
-{
-	technique
-	{
-		pass
-		{
-			texture_unit IBL_Specular
-			{
-			    texture specular.dds cubic
-				tex_address_mode clamp
-				env_map cubic_reflection
-			}
-		}
-	}
-}
+import Pbr from pbr.material
+import PbrIbl from pbr.material
 
 material Cube : Pbr
 {
@@ -23,8 +7,6 @@ material Cube : Pbr
 	{
 		pass
 		{
-		    diffuse 1 0 0
-		    emissive 0.5 0 0
             texture_unit Albedo
             {
                 texture foam-grip1-albedo.dds

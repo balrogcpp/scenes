@@ -1,4 +1,4 @@
-import PbrTerrain from Terrain.material
+import PbrTerrain from terrain.material
 
 material Terrain : PbrTerrain
 {
@@ -8,15 +8,15 @@ material Terrain : PbrTerrain
 		{
             texture_unit Albedo
             {
-                texture white.dds
+                texture Grass_2_Diffuse.dds
             }
             texture_unit Normal
             {
-                texture blue.dds
+                texture Grass_2_Normal.png
             }
             texture_unit Metalness
             {
-                texture white.dds
+                texture black.dds
             }
             texture_unit Roughness
             {

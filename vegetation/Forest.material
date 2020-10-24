@@ -1,6 +1,6 @@
-import PbrForest from Forest.material
-import PbrForest_Shadowed from Forest.material
-import Pbr from PBR.material
+import PbrForest from forest.material
+import PbrForest_Shadowed from forest.material
+import Pbr from pbr.material
 import PbrBasic from basic.material
 
 material GrassCustom : PbrForest_Shadowed
@@ -109,10 +109,13 @@ material 3D-Diggers/farn02 : PbrForest
 
 material 3D-Diggers/plant1 : PbrForest
 {
+    receive_shadows on
+    transparency_casts_shadows off
     technique
     {
       pass
       {
+        alpha_rejection greater_equal 250
         texture_unit Albedo
         {
             texture plant1.dds
