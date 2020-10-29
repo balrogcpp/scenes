@@ -8,19 +8,53 @@ material Terrain : PbrTerrain
 		{
             texture_unit Albedo
             {
-                texture Grass_2_Diffuse.dds
+                texture bog_albedo.png
             }
             texture_unit Normal
             {
-                texture Grass_2_Normal.png
+                texture bog_normal-dx.png
             }
-            texture_unit Metalness
+            texture_unit Metallic
             {
-                texture black.dds
+                texture bog_roughness.png
             }
             texture_unit Roughness
             {
-                texture white.dds
+                texture bog_roughness.png
+            }
+            texture_unit Offset
+            {
+                texture bog_height.png
+            }
+		}
+    }
+}
+
+material Terrain2 : PbrTerrain
+{
+	technique
+	{
+		pass
+		{
+            texture_unit Albedo
+            {
+                texture Rock20_diffspec.dds
+            }
+            texture_unit Normal
+            {
+                texture Rock20_normheight.dds
+            }
+            texture_unit Metallic
+            {
+                texture Rock20_metallness.dds
+            }
+            texture_unit Roughness
+            {
+                texture Rock20_metallness.dds
+            }
+            texture_unit Offset
+            {
+                texture Rock20_offset.dds
             }
 		}
     }

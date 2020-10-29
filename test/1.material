@@ -54,7 +54,7 @@ material old_car : Pbr
             {
                 texture black.dds
             }
-            texture_unit AmbientOcclusion
+            texture_unit AO
             {
                 texture Material_294_metallicRoughness.dds
             }*/

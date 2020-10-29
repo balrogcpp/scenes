@@ -16,7 +16,7 @@ material 08_-_Default : Pbr
             {
                 texture Cerberus_N.dds
             }
-            texture_unit Metalness
+            texture_unit Metallic
             {
                 texture Cerberus_M.dds
             }

@@ -15,7 +15,7 @@ material moss_rock_08 : Pbr {
             {
                 texture moss-rock-08-normal.dds
             }
-            texture_unit Metalness
+            texture_unit Metallic
             {
                 texture white.dds
             }
