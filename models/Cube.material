@@ -1,7 +1,7 @@
-import Pbr from pbr.material
+import PBR from pbr.material
 import PbrIbl from pbr.material
 
-material Cube : Pbr
+material Cube : PBR
 {
 	technique
 	{

@@ -1,11 +1,8 @@
-import PbrForest from forest.material
-import PbrForest_Shadowed from forest.material
-import Pbr from pbr.material
-import PbrBasic from pbr.material
+import PbrPaged from pbr.material
+import PbrGrass from pbr.material
 
-material GrassCustom : PbrForest_Shadowed
+material GrassCustom : PbrGrass
 {
-    receive_shadows on
     technique
     {
       pass
@@ -14,40 +11,17 @@ material GrassCustom : PbrForest_Shadowed
         {
             texture Grass_A.dds
         }
-        texture_unit Normal
-        {
-            texture white.dds
-        }
       }
 	}
 }
 
-material GrassCustom2 : PbrForest
+material 3D-Diggers/fir01 : PbrPaged
 {
-    receive_shadows off
+    receive_shadows on
     technique
     {
       pass
       {
-        texture_unit Albedo
-        {
-            texture Grass_B.dds
-        }
-      }
-	}
-}
-
-material 3D-Diggers/fir01 : PbrBasic
-{
-    receive_shadows off
-    transparency_casts_shadows on
-    technique
-    {
-      pass
-      {
-        alpha_rejection greater_equal 128
-        ambient 0.05 0.05 0.05
-
         texture_unit Albedo
         {
             texture fir01.dds
@@ -57,25 +31,22 @@ material 3D-Diggers/fir01 : PbrBasic
 	}
 }
 
-material 3D-Diggers/fir02 : PbrBasic
+material 3D-Diggers/fir02 : PbrPaged
 {
+    receive_shadows on
     technique
     {
       pass
       {
         texture_unit Albedo
         {
-            texture white-spruce-tree-bark-albedo.dds
-        }
-        texture_unit Normal
-        {
-            texture white-spruce-tree-bark-normal-dx.dds
+            texture fir02.dds
         }
       }
 	}
 }
 
-material 3D-Diggers/farn01 : PbrForest
+material 3D-Diggers/farn01 : PbrPaged
 {
     technique
     {
@@ -89,7 +60,7 @@ material 3D-Diggers/farn01 : PbrForest
 	}
 }
 
-material 3D-Diggers/farn02 : PbrForest
+material 3D-Diggers/farn02 : PbrPaged
 {
     technique
     {
@@ -104,9 +75,9 @@ material 3D-Diggers/farn02 : PbrForest
 	}
 }
 +
-material 3D-Diggers/plant1 : PbrForest
+material 3D-Diggers/plant1 : PbrPaged
 {
-    receive_shadows on
+    receive_shadows off
     transparency_casts_shadows off
     technique
     {
@@ -121,7 +92,7 @@ material 3D-Diggers/plant1 : PbrForest
     }
 }
 
-material 3D-Diggers/plant2 : PbrForest
+material 3D-Diggers/plant2 : PbrPaged
 {
     technique
     {

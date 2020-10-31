@@ -1,6 +1,6 @@
-import PbrTerrain from terrain.material
+import Terrain from pbr.material
 
-material Terrain : PbrTerrain
+material TerrainCustom : Terrain
 {
 	technique
 	{
@@ -25,36 +25,6 @@ material Terrain : PbrTerrain
             texture_unit Offset
             {
                 texture bog_height.png
-            }
-		}
-    }
-}
-
-material Terrain2 : PbrTerrain
-{
-	technique
-	{
-		pass
-		{
-            texture_unit Albedo
-            {
-                texture Rock20_diffspec.dds
-            }
-            texture_unit Normal
-            {
-                texture Rock20_normheight.dds
-            }
-            texture_unit Metallic
-            {
-                texture Rock20_metallness.dds
-            }
-            texture_unit Roughness
-            {
-                texture Rock20_metallness.dds
-            }
-            texture_unit Offset
-            {
-                texture Rock20_offset.dds
             }
 		}
     }

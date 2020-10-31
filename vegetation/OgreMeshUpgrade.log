@@ -1,0 +1,6 @@
+13:58:44: Creating resource group General
+13:58:44: Creating resource group OgreInternal
+13:58:44: Creating resource group OgreAutodetect
+13:58:44: Registering ResourceManager for type Material
+13:58:44: Registering ResourceManager for type Skeleton
+13:58:44: Registering ResourceManager for type Mesh

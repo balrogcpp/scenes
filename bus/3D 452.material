@@ -1,0 +1,266 @@
+import PBR from pbr.material
+
+material BAGAGNIK : PBR
+{
+	technique
+	{
+		pass 
+		{
+            texture_unit Albedo
+            {
+                texture trucks_addons_roofracks_1__d_a.dds
+            }
+            texture_unit Normal
+            {
+                texture trucks_addons_roofracks_1__n_d.dds
+            }
+            texture_unit Metallic
+            {
+                texture trucks_addons_roofracks_1__sh_d.dds
+            }
+		}
+	}
+}
+
+material BUMPER : PBR
+{
+	technique
+	{
+		pass 
+		{
+			texture_unit Albedo
+			{
+				texture tex_3826_94.dds
+			}
+		}
+	}
+}
+
+material DISK : PBR
+{
+	technique
+	{
+		pass 
+		{
+			texture_unit Albedo
+			{
+				texture tex_3797_94.dds
+			}
+		}
+	}
+}
+
+material GALOGEN : PBR
+{
+	technique
+	{
+		pass 
+		{
+			texture_unit Albedo
+			{
+				texture tex_2956_94.dds
+			}
+		}
+	}
+}
+
+material KANISTRA : PBR
+{
+	technique
+	{
+		pass 
+		{
+			texture_unit Albedo
+			{
+				texture tex_3652_94.dds
+			}
+		}
+	}
+}
+
+material KUZOV : PBR
+{
+	technique
+	{
+		pass 
+		{
+            texture_unit Albedo
+            {
+                texture trucks_khanlo4f_wt__d.dds
+            }
+            texture_unit Normal
+            {
+                texture trucks_khanlo4f__n_d.dds
+            }
+            texture_unit Metallic
+            {
+                texture trucks_khanlo4f__sh_d.dds
+            }
+		}
+	}
+}
+
+material POKR : PBR
+{
+	technique
+	{
+		pass 
+		{
+			texture_unit Albedo
+			{
+				texture tex_3768_94.dds
+				//texture yellow.dds
+			}
+		}
+	}
+}
+
+material PRIBORKA : PBR
+{
+	technique
+	{
+		pass 
+		{
+			texture_unit Albedo
+			{
+				texture trucks_khanlo4f_gauges__d.dds
+			}
+		}
+	}
+}
+
+material REMNI : PBR
+{
+	technique
+	{
+		pass 
+		{
+			texture_unit Albedo
+			{
+				texture tex_3681_94.dds
+			}
+		}
+	}
+}
+
+material SALON : PBR
+{
+	technique
+	{
+		pass 
+		{
+			texture_unit Albedo
+			{
+				texture trucks_khanlo4f_cab__d.dds
+			}
+			texture_unit Normal
+			{
+				texture trucks_khanlo4f_cab__n_d.dds
+			}
+			texture_unit Metallic
+			{
+				texture trucks_khanlo4f_cab__sh_d.dds
+			}
+		}
+	}
+}
+
+material SCHNORKEL : PBR
+{
+	technique
+	{
+		pass 
+		{
+			texture_unit Albedo
+			{
+				texture tex_3420_94.dds
+			}
+		}
+	}
+}
+
+material SOBACHKA : PBR
+{
+	technique
+	{
+		pass 
+		{
+			texture_unit Albedo
+			{
+				texture tex_3449_94.dds
+			}
+		}
+	}
+}
+
+material STEKLO : PBR
+{
+	technique
+	{
+		pass 
+		{
+			texture_unit Albedo
+			{
+				texture trucks_khanlo4f_glass__d_a.dds
+			}
+			texture_unit Normal
+			{
+				texture trucks_khanlo4f_glass__n_d.dds
+			}
+			texture_unit Metallic
+			{
+				texture trucks_khanlo4f_glass__sh_d.dds
+			}
+		}
+	}
+}
+
+material STPRIBOR : PBR
+{
+	technique
+	{
+		pass 
+		{
+			texture_unit Albedo
+			{
+				texture trucks_khanlo4f_gauges_glass__d_a.dds
+			}
+		}
+	}
+}
+
+material SUNDUK : PBR
+{
+	technique
+	{
+		pass 
+		{
+			texture_unit Albedo
+			{
+				texture tex_3885_94.dds
+			}
+		}
+	}
+}
+
+material bumper_stock : PBR
+{
+	technique
+	{
+		pass 
+		{
+            texture_unit Albedo
+            {
+                texture trucks_khanlo4f__d.dds
+            }
+            texture_unit Normal
+            {
+                texture trucks_khanlo4f__n_d.dds
+            }
+            texture_unit Metallic
+            {
+                texture trucks_khanlo4f__sh_d.dds
+            }
+		}
+	}
+}
