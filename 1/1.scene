@@ -8,32 +8,40 @@
             <position x="0" y="0" z="1"/>
             <rotation qw="0.780483" qx="0.483536" qy="0.336872" qz="-0.208704"/>
             <scale x="1.000000" y="1.000000" z="1.000000"/>
-            <camera fov="1.2" name="Default" projectionType="perspective">
+            <camera fov="1" name="Default" projectionType="perspective">
                 <clipping far="1000.0" near="0.001"/>
             </camera>
             <node name="Spot">
                 <position x="0" y="1" z="0"/>
-                <light name="Spot" powerScale="10" type="spot" castShadows="true">
+                <light name="Spot" powerScale="10" type="spot" castShadows="false">
                     <colourDiffuse b="1.0" g="1.0" r="1.0"/>
-                    <lightRange falloff="0.2" inner="0" outer="60"/>-->
-                    <lightAttenuation constant="0.0" linear="0.1" quadratic="0.0" range="250"/>
+                    <lightRange falloff="0.2" inner="0" outer="30"/>-->
+                    <lightAttenuation constant="0.0" linear="0.1" quadratic="0.0" range="50"/>
+                </light>
+            </node>
+            <node name="Spot2">
+                <position x="0" y="0" z="2"/>
+                <light name="Spot2" powerScale="10" type="spot" castShadows="false">
+                    <colourDiffuse b="1.0" g="1.0" r="1.0"/>
+                    <lightRange falloff="0.2" inner="0" outer="30"/>-->
+                    <lightAttenuation constant="0.0" linear="0.1" quadratic="0.0" range="50"/>
                 </light>
             </node>
         </node>
-        <!--        <node name="Sun">-->
-        <!--            <position x="40.659888" y="60.704975" z="12.950829"/>-->
-        <!--            <direction x="40.659888" y="-60.704975" z="-12.950829"/>-->
-        <!--            <light name="Sun" powerScale="10" type="directional" castShadows="true">-->
-        <!--                <colourDiffuse b="1.0" g="1.0" r="1.0"/>-->
-        <!--                <colourSpecular b="1.0" g="1.0" r="1.0"/>-->
-        <!--                <lightRange falloff="1.0" inner="30" outer="50"/>&ndash;&gt;-->
-        <!--                <lightAttenuation constant="0.0" linear="0.5" quadratic="0.0" range="1000"/>-->
-        <!--            </light>-->
-        <!--        </node>-->
+        <node name="Sun">
+            <position x="40.659888" y="60.704975" z="12.950829"/>
+            <direction x="40.659888" y="-60.704975" z="-12.950829"/>
+            <light name="Sun" powerScale="10" type="directional" castShadows="false">
+                <colourDiffuse b="1.0" g="1.0" r="1.0"/>
+                <colourSpecular b="1.0" g="1.0" r="1.0"/>
+                <lightRange falloff="1.0" inner="30" outer="50"/>-->
+                <lightAttenuation constant="0.0" linear="0.5" quadratic="0.0" range="1000"/>
+            </light>
+        </node>
         <node name="Cube.001">
             <position x="-4.351435" y="0.0" z="2"/>
             <rotation qw="1.000000" qx="0.000000" qy="0.000000" qz="-0.000000"/>
-            <scale x="4" y="2" z="2"/>
+            <scale x="1" y="1" z="1"/>
             <entity meshFile="Volume33_copy000.mesh" name="Cube.001">
             </entity>
         </node>
@@ -81,23 +89,23 @@
             <entity meshFile="Cube.mesh" name="Cube.004">
             </entity>
         </node>
-<!--        <node name="Plane">-->
-<!--            <plane material="Reflection2" width="500" reflection="true" distance="0.0"/>-->
-<!--        </node>-->
+        <node name="Plane">
+            <plane material="Reflection2" width="500" reflection="true" distance="0.0"/>
+        </node>
     </nodes>
     <forest>
     </forest>
     <environment>
         <colourBackground b="0.05087608844041824" g="0.05087608844041824" r="0.05087608844041824"/>
-        <colourAmbient r="0.1 " g="0.1" b="0.1"/>
+        <colourAmbient r="0.3" g="0.3" b="0.3"/>
         <shadowColor b="0" g="0" r="0.0"/>
         <fog mode="exp" density="0.02">
             <colour r="0.33" g="0.33" b="0.33"/>
         </fog>
-<!--        <skyBox cubemap="OutputCube.dds"/>-->
+        <skyBox cubemap="OutputCube.dds"/>
     </environment>
-    <terrainGroup worldSize="1000" mapSize="129" minBatchSize="17" maxBatchSize="65" inputScale="20"
-                  tuningMaxPixelError="1">
-        <terrain x="0" y="0" heightmap="terrain2.png"/>
-    </terrainGroup>
+    <!--            <terrainGroup worldSize="400" mapSize="129" minBatchSize="17" maxBatchSize="65" inputScale="10"-->
+    <!--                          tuningMaxPixelError="8">-->
+    <!--                <terrain x="0" y="0" heightmap="terrain.png"/>-->
+    <!--            </terrainGroup>-->
 </scene>

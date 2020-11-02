@@ -1,7 +1,8 @@
-import PbrPaged from pbr.material
-import PbrGrass from pbr.material
+import Paged from pbr.material
+import Basic from pbr.material
+import Grass from pbr.material
 
-material GrassCustom : PbrGrass
+material GrassCustom : Grass
 {
     technique
     {
@@ -15,9 +16,8 @@ material GrassCustom : PbrGrass
 	}
 }
 
-material 3D-Diggers/fir01 : PbrPaged
+material 3D-Diggers/fir01 : Paged
 {
-    receive_shadows on
     technique
     {
       pass
@@ -31,9 +31,8 @@ material 3D-Diggers/fir01 : PbrPaged
 	}
 }
 
-material 3D-Diggers/fir02 : PbrPaged
+material 3D-Diggers/fir02 : Paged
 {
-    receive_shadows on
     technique
     {
       pass
@@ -46,7 +45,7 @@ material 3D-Diggers/fir02 : PbrPaged
 	}
 }
 
-material 3D-Diggers/farn01 : PbrPaged
+material 3D-Diggers/farn01 : Paged
 {
     technique
     {
@@ -60,7 +59,7 @@ material 3D-Diggers/farn01 : PbrPaged
 	}
 }
 
-material 3D-Diggers/farn02 : PbrPaged
+material 3D-Diggers/farn02 : Paged
 {
     technique
     {
@@ -75,7 +74,7 @@ material 3D-Diggers/farn02 : PbrPaged
 	}
 }
 +
-material 3D-Diggers/plant1 : PbrPaged
+material 3D-Diggers/plant1 : Paged
 {
     receive_shadows off
     transparency_casts_shadows off
@@ -92,7 +91,7 @@ material 3D-Diggers/plant1 : PbrPaged
     }
 }
 
-material 3D-Diggers/plant2 : PbrPaged
+material 3D-Diggers/plant2 : Paged
 {
     technique
     {

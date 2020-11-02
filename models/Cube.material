@@ -1,5 +1,5 @@
 import PBR from pbr.material
-import PbrIbl from pbr.material
+import PBR_IBL from pbr.material
 
 material Cube : PBR
 {
@@ -7,9 +7,11 @@ material Cube : PBR
 	{
 		pass
 		{
+		    diffuse 0.5 0.0 0.0
+
             texture_unit Albedo
             {
-                texture foam-grip1-albedo.dds
+                texture white.dds
             }
             texture_unit Normal
             {

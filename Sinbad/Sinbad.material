@@ -1,220 +1,159 @@
-material Sinbad/Body
+import Basic from pbr.material
+
+material Sinbad/Body : Basic
 {
-	receive_shadows on
 	technique
 	{
 		pass
 		{
-		    emissive 0.2 0.2 0.2
-			texture_unit
+			texture_unit Albedo
 			{
 				texture sinbad_body.dds
 			}
-
-             rtshader_system
-             {
-                 lighting_stage per_pixel
-             }
 		}
 	}
 }
 
-material Sinbad/Gold
+material Sinbad/Gold : Basic
 {
-	receive_shadows on
 	technique
 	{
 		pass
 		{
-			texture_unit
+			texture_unit Albedo
 			{
 				texture sinbad_clothes.dds
 			}
-
-            rtshader_system
-            {
-                lighting_stage per_pixel
-            }
 		}
 	}
 }
 
-material Sinbad/Sheaths
+material Sinbad/Sheaths : Basic
 {
-	receive_shadows on
 	technique
 	{
 		pass
 		{
-			texture_unit
+			texture_unit Albedo
 			{
 				texture sinbad_sword.dds
 			}
-
-            rtshader_system
-            {
-                lighting_stage per_pixel
-            }
 		}
 	}
 }
 
-material Sinbad/Clothes
+material Sinbad/Clothes : Basic
 {
-	receive_shadows on
 	technique
 	{
 		pass
 		{
-			texture_unit
+			texture_unit Albedo
 			{
 				texture sinbad_clothes.dds
 			}
-
-            rtshader_system
-            {
-                lighting_stage per_pixel
-            }
 		}
 	}
 }
 
-material Sinbad/Teeth
+material Sinbad/Teeth : Basic
 {
-	receive_shadows on
 	technique
 	{
 		pass
 		{
-			texture_unit
+			texture_unit Albedo
 			{
 				texture sinbad_body.dds
 			}
-
-            rtshader_system
-            {
-                lighting_stage per_pixel
-            }
 		}
 	}
 }
 
-material Sinbad/Eyes
+material Sinbad/Eyes : Basic
 {
-	receive_shadows on
 	technique
 	{
 		pass
 		{
-			texture_unit
+			texture_unit Albedo
 			{
 				texture sinbad_body.dds
 			}
-
-            rtshader_system
-            {
-                lighting_stage per_pixel
-            }
 		}
 	}
 }
 
-material Sinbad/Spikes
+material Sinbad/Spikes : Basic
 {
-	receive_shadows on
 	technique
 	{
 		pass
 		{
-			texture_unit
+			texture_unit Albedo
 			{
 				texture sinbad_clothes.dds
 			}
-
-            rtshader_system
-            {
-                lighting_stage per_pixel
-            }
 		}
 	}
 }
 
-material Sinbad/Blade
+material Sinbad/Blade : Basic
 {
-	receive_shadows on
 	technique
 	{
 		pass
 		{
-			texture_unit
+		    
+			texture_unit Albedo
 			{
 				texture sinbad_sword.dds
 			}
-
-            rtshader_system
-            {
-                lighting_stage per_pixel
-            }
 		}
 	}
 }
 
-material Sinbad/Ruby
+material Sinbad/Ruby : Basic
 {
-	receive_shadows on
 	technique
 	{
 		pass
 		{
-			texture_unit
+    
+			texture_unit Albedo
 			{
 				texture sinbad_sword.dds
 			}
-
-            rtshader_system
-            {
-                lighting_stage per_pixel
-            }
 		}
 	}
 }
 
-material Sinbad/Hilt
+material Sinbad/Hilt : Basic
 {
-	receive_shadows on
 	technique
 	{
 		pass
 		{
-			texture_unit
+		    
+			texture_unit Albedo
 			{
 				texture sinbad_sword.dds
 			}
-
-            rtshader_system
-            {
-                lighting_stage per_pixel
-            }
 		}
 	}
 }
 
-material Sinbad/Handle
+material Sinbad/Handle : Basic
 {
-	receive_shadows on
 	technique
 	{
 		pass
 		{
-			texture_unit
+		    
+			texture_unit Albedo
 			{
 				texture sinbad_sword.dds
 			}
-
-            rtshader_system
-            {
-                lighting_stage per_pixel
-            }
 		}
 	}
 }

@@ -8,19 +8,27 @@ material TerrainCustom : Terrain
 		{
             texture_unit Albedo
             {
-                texture bog_albedo.png
+                texture bog_albedo.dds
             }
             texture_unit Normal
             {
-                texture bog_normal-dx.png
+                texture bog_normal.dds
             }
             texture_unit Metallic
             {
-                texture bog_roughness.png
+                texture bog_metallic.dds
             }
             texture_unit Roughness
             {
-                texture bog_roughness.png
+                texture bog_roughness.dds
+            }
+            texture_unit AO
+            {
+                texture bog_ao.png
+            }
+            texture_unit Emissive
+            {
+                texture black.dds
             }
             texture_unit Offset
             {
