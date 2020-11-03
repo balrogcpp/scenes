@@ -1,4 +1,5 @@
 import PBR from pbr.material
+import Basic from pbr.material
 
 material BAGAGNIK : PBR
 {
@@ -22,7 +23,7 @@ material BAGAGNIK : PBR
 	}
 }
 
-material BUMPER : PBR
+material BUMPER : Basic
 {
 	technique
 	{
@@ -36,7 +37,7 @@ material BUMPER : PBR
 	}
 }
 
-material DISK : PBR
+material DISK : Basic
 {
 	technique
 	{
@@ -50,7 +51,7 @@ material DISK : PBR
 	}
 }
 
-material GALOGEN : PBR
+material GALOGEN : Basic
 {
 	technique
 	{
@@ -64,7 +65,7 @@ material GALOGEN : PBR
 	}
 }
 
-material KANISTRA : PBR
+material KANISTRA : Basic
 {
 	technique
 	{
@@ -100,7 +101,7 @@ material KUZOV : PBR
 	}
 }
 
-material POKR : PBR
+material POKR : Basic
 {
 	technique
 	{
@@ -109,13 +110,12 @@ material POKR : PBR
 			texture_unit Albedo
 			{
 				texture tex_3768_94.dds
-				//texture yellow.dds
 			}
 		}
 	}
 }
 
-material PRIBORKA : PBR
+material PRIBORKA : Basic
 {
 	technique
 	{
@@ -129,7 +129,7 @@ material PRIBORKA : PBR
 	}
 }
 
-material REMNI : PBR
+material REMNI : Basic
 {
 	technique
 	{
@@ -165,7 +165,7 @@ material SALON : PBR
 	}
 }
 
-material SCHNORKEL : PBR
+material SCHNORKEL : Basic
 {
 	technique
 	{
@@ -179,7 +179,7 @@ material SCHNORKEL : PBR
 	}
 }
 
-material SOBACHKA : PBR
+material SOBACHKA : Basic
 {
 	technique
 	{
@@ -215,7 +215,7 @@ material STEKLO : PBR
 	}
 }
 
-material STPRIBOR : PBR
+material STPRIBOR : Basic
 {
 	technique
 	{
@@ -229,7 +229,7 @@ material STPRIBOR : PBR
 	}
 }
 
-material SUNDUK : PBR
+material SUNDUK : Basic
 {
 	technique
 	{
