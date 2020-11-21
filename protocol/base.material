@@ -1,0 +1,35 @@
+import PBR from pbr.material
+
+material base : PBR
+{
+	technique
+	{
+		pass
+		{
+            texture_unit Albedo
+            {
+                texture base_albedo.dds
+            }
+            texture_unit Normal
+            {
+                texture base_normal.dds
+            }
+            texture_unit Metallic
+            {
+                texture base_metallic.dds
+            }
+            texture_unit Roughness
+            {
+                texture base_roug.dds
+            }
+            /*texture_unit AO
+            {
+                texture white.dds
+            }*/
+            texture_unit Emission
+            {
+                texture base_emission.dds
+            }
+		}
+    }
+}

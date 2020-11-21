@@ -7,6 +7,9 @@ material BAGAGNIK : PBR
 	{
 		pass 
 		{
+            cull_hardware none
+            cull_software none
+
             texture_unit Albedo
             {
                 texture trucks_addons_roofracks_1__d_a.dds
@@ -29,6 +32,8 @@ material BUMPER : Basic
 	{
 		pass 
 		{
+            cull_hardware none
+            cull_software none
 			texture_unit Albedo
 			{
 				texture tex_3826_94.dds
@@ -43,6 +48,8 @@ material DISK : Basic
 	{
 		pass 
 		{
+            cull_hardware none
+            cull_software none
 			texture_unit Albedo
 			{
 				texture tex_3797_94.dds
@@ -57,6 +64,8 @@ material GALOGEN : Basic
 	{
 		pass 
 		{
+            cull_hardware none
+            cull_software none
 			texture_unit Albedo
 			{
 				texture tex_2956_94.dds
@@ -71,6 +80,8 @@ material KANISTRA : Basic
 	{
 		pass 
 		{
+            cull_hardware none
+            cull_software none
 			texture_unit Albedo
 			{
 				texture tex_3652_94.dds
@@ -85,6 +96,8 @@ material KUZOV : PBR
 	{
 		pass 
 		{
+            cull_hardware none
+            cull_software none
             texture_unit Albedo
             {
                 texture trucks_khanlo4f_wt__d.dds
@@ -121,6 +134,8 @@ material PRIBORKA : Basic
 	{
 		pass 
 		{
+            cull_hardware none
+            cull_software none
 			texture_unit Albedo
 			{
 				texture trucks_khanlo4f_gauges__d.dds
@@ -135,6 +150,8 @@ material REMNI : Basic
 	{
 		pass 
 		{
+            cull_hardware none
+            cull_software none
 			texture_unit Albedo
 			{
 				texture tex_3681_94.dds
@@ -149,6 +166,8 @@ material SALON : PBR
 	{
 		pass 
 		{
+            cull_hardware none
+            cull_software none
 			texture_unit Albedo
 			{
 				texture trucks_khanlo4f_cab__d.dds
@@ -171,6 +190,8 @@ material SCHNORKEL : Basic
 	{
 		pass 
 		{
+            cull_hardware none
+            cull_software none
 			texture_unit Albedo
 			{
 				texture tex_3420_94.dds
@@ -199,6 +220,8 @@ material STEKLO : PBR
 	{
 		pass 
 		{
+            cull_hardware none
+            cull_software none
 			texture_unit Albedo
 			{
 				texture trucks_khanlo4f_glass__d_a.dds
