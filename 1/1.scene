@@ -31,21 +31,21 @@
                 </light>
             </node>
         </node>
-<!--        <node name="Lights">-->
-<!--            <position x="0" y="0" z="0"/>-->
-<!--            <scale x="1.000000" y="1.000000" z="1.000000"/>-->
-<!--            <node name="Spot">-->
-<!--                <position x="10.601280" y="6.725968" z="10.940395"/>-->
-<!--                <rotation qw="0.120358" qx="-0.049746" qy="0.903548" qz="-0.408216"/>-->
-<!--                <scale x="1.000000" y="1.000000" z="1.000000"/>-->
-<!--                <light name="Spot" powerScale="100.0" type="spot" castShadows="true">-->
-<!--                    <colourDiffuse b="1.0" g="1.0" r="1.0"/>-->
-<!--                    <colourSpecular b="1.0" g="1.0" r="1.0"/>-->
-<!--                    <lightRange falloff="1.0" inner="1.112647370642442" outer="1.3089969158172607" />-->
-<!--                    <lightAttenuation constant="1.0" linear="0.03333335240683057" quadratic="0.0" range="35"/>-->
-<!--                </light>-->
-<!--            </node>-->
-<!--        </node>-->
+        <node name="Lights">
+            <position x="0" y="0" z="0"/>
+            <scale x="1.000000" y="1.000000" z="1.000000"/>
+            <node name="Spot">
+                <position x="10.601280" y="6.725968" z="10.940395"/>
+                <rotation qw="0.120358" qx="-0.049746" qy="0.903548" qz="-0.408216"/>
+                <scale x="1.000000" y="1.000000" z="1.000000"/>
+                <light name="Spot" powerScale="100.0" type="spot" castShadows="true">
+                    <colourDiffuse b="1.0" g="1.0" r="1.0"/>
+                    <colourSpecular b="1.0" g="1.0" r="1.0"/>
+                    <lightRange falloff="1.0" inner="1.112647370642442" outer="1.3089969158172607" />
+                    <lightAttenuation constant="1.0" linear="0.03333335240683057" quadratic="0.0" range="50"/>
+                </light>
+            </node>
+        </node>
         <node name="Cube">
             <position x="10" y="1.0" z="10"/>
             <rotation qw="1.000000" qx="0.000000" qy="0.000000" qz="0.000000"/>
@@ -61,14 +61,14 @@
             </entity>
         </node>
 <!--        <node name="Plane">-->
-<!--            <plane material="ReflectivePlane" width="500" reflection="false" distance="0.0"/>-->
+<!--            <plane material="ReflectivePlane" width="500" reflection="true" distance="0.0"/>-->
 <!--        </node>-->
     </nodes>
     <forest>
     </forest>
     <environment>
         <colourBackground b="0.05087608844041824" g="0.05087608844041824" r="0.05087608844041824"/>
-        <colourAmbient r="0.1" g="0.1" b="0.1"/>
+        <colourAmbient r="0.5" g="0.5" b="0.5"/>
         <shadowColor b="0" g="0" r="0"/>
         <fog mode="exp" density="0.01">
             <colour r="0.33" g="0.33" b="0.33"/>
@@ -76,7 +76,7 @@
 <!--        <skyBox cubemap="BlueSky512.dds"/>-->
         <skyBox cubemap="OutputCube.dds"/>
     </environment>
-    <terrainGroup worldSize="500" mapSize="129" minBatchSize="17" maxBatchSize="33" inputScale="10" tuningMaxPixelError="8">
+    <terrainGroup worldSize="500" mapSize="257" minBatchSize="33" maxBatchSize="65" inputScale="10" tuningMaxPixelError="0">
         <terrain x="0" y="0" heightmap="terrain.png"/>
     </terrainGroup>
 </scene>
