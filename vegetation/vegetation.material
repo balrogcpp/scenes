@@ -8,6 +8,8 @@ material GrassCustom : Grass
     {
       pass
       {
+        alpha_rejection greater_equal 128
+
         texture_unit Albedo
         {
             texture Grass_A.dds
@@ -31,7 +33,7 @@ material 3D-Diggers/fir01 : Paged
 	}
 }
 
-material 3D-Diggers/fir02 : Paged
+material 3D-Diggers/fir02 : Basic
 {
     technique
     {
