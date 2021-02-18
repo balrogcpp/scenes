@@ -31,21 +31,21 @@
 <!--                </light>-->
 <!--            </node>-->
         </node>
-        <node name="Lights">
-            <position x="0" y="0" z="0"/>
-            <scale x="1.000000" y="1.000000" z="1.000000"/>
-            <node name="Spot">
-                <position x="10.601280" y="15.725968" z="10.940395"/>
-                <rotation qw="0.120358" qx="-0.049746" qy="0.903548" qz="-0.408216"/>
-                <scale x="1.000000" y="1.000000" z="1.000000"/>
-                <light name="Spot" powerScale="200.0" type="spot" castShadows="true">
-                    <colourDiffuse b="1.0" g="1.0" r="1.0"/>
-                    <colourSpecular b="1.0" g="1.0" r="1.0"/>
-                    <lightRange falloff="1.0" inner="0.0" outer="1.3089969158172607" />
-                    <lightAttenuation constant="0.0" linear="0.0" quadratic="0.2" range="50"/>
-                </light>
-            </node>
-        </node>
+<!--        <node name="Lights">-->
+<!--            <position x="0" y="0" z="0"/>-->
+<!--            <scale x="1.000000" y="1.000000" z="1.000000"/>-->
+<!--            <node name="Spot">-->
+<!--                <position x="0" y="15.725968" z="10"/>-->
+<!--                <direction x="0" y="-15.725968" z="-10"/>-->
+<!--                <scale x="1.000000" y="1.000000" z="1.000000"/>-->
+<!--                <light name="Spot" powerScale="200.0" type="spot" castShadows="true">-->
+<!--                    <colourDiffuse b="1.0" g="1.0" r="1.0"/>-->
+<!--                    <colourSpecular b="1.0" g="1.0" r="1.0"/>-->
+<!--                    <lightRange falloff="1.0" inner="0.0" outer="1.3089969158172607" />-->
+<!--                    <lightAttenuation constant="0.0" linear="0.0" quadratic="0.2" range="50"/>-->
+<!--                </light>-->
+<!--            </node>-->
+<!--        </node>-->
         <node name="Cube">
             <position x="10" y="1.0" z="10"/>
             <rotation qw="1.000000" qx="0.000000" qy="0.000000" qz="0.000000"/>
@@ -53,22 +53,22 @@
             <entity meshFile="Cube.mesh" name="Cube">
             </entity>
         </node>
-        <node name="Rifle">
-            <position x="1" y="1" z="0"/>
-            <rotation qw="1.000000" qx="0.000000" qy="0.000000" qz="0.000000"/>
-            <scale x="4.000000" y="4.000000" z="4.000000"/>
-            <entity meshFile="base.mesh" name="Rifle">
-            </entity>
-        </node>
+<!--        <node name="Rifle">-->
+<!--            <position x="1" y="1" z="0"/>-->
+<!--            <rotation qw="1.000000" qx="0.000000" qy="0.000000" qz="0.000000"/>-->
+<!--            <scale x="4.000000" y="4.000000" z="4.000000"/>-->
+<!--            <entity meshFile="base.mesh" name="Rifle">-->
+<!--            </entity>-->
+<!--        </node>-->
         <node name="Plane">
             <plane material="ReflectivePlane" width="500" reflection="false" distance="0.0"/>
         </node>
     </nodes>
-    <forest>
-    </forest>
+<!--    <forest>-->
+<!--    </forest>-->
     <environment>
         <colourBackground b="0.05087608844041824" g="0.05087608844041824" r="0.05087608844041824"/>
-        <colourAmbient r="0.2" g="0.2" b="0.2"/>
+        <colourAmbient r="0.02" g="0.02" b="0.02"/>
         <shadowColor b="0.0" g="0.0" r="0.2"/>
         <fog mode="exp" density="0.01">
             <colour r="0.1" g="0.1" b="0.1"/>
