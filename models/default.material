@@ -5,6 +5,5 @@ material default : PBR
 {
     set $Albedo hard-edged-rock7_albedo.dds
     set $Normal hard-edged-rock7_nmap-ogl.dds
-    set $Metallic hard-edged-rock7_metalness.dds
-    set $Roughness hard-edged-rock7_rough.dds
+    set $OMR hard-edged-rock7_orm.dds
 }

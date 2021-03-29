@@ -3,8 +3,9 @@ import PBR_IBL from pbr.material
 
 material Cube : PBR
 {
-    set $Albedo foam-grip1-albedo.dds
-    set $Metallic foam-grip1-metallic.dds
-    set $Roughness Titanium-Scuffed_roughness.dds
-    set $AO foam-grip1-ao.dds
+    set $Albedo bog_albedo.dds
+    set $Normal bog_normal.dds
+    set $Metallic bog_metallic.dds
+    set $Roughness bog_roughness.dds
+    set $AO bog_ao.dds
 }

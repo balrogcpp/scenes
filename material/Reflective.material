@@ -1,18 +1,18 @@
 import Plane from pbr.material
 import PBR from pbr.material
 
-material ReflectivePlane : Plane
+material ReflectivePlane2 : PBR
 {
-    set $Albedo white.dds
+    set $Albedo bog_albedo.dds
     set $Normal bog_normal.dds
     set $Metallic bog_metallic.dds
     set $Roughness bog_roughness.dds
     set $AO bog_ao.dds
-    set $Offset bog_height.dds
+}
 
-    technique {
-        pass {
-            diffuse 0 0.5 0.5
-        }
-    }
+material ReflectivePlane : PBR
+{
+    set $Albedo bog_albedo.dds
+    set $Normal bog_normal.dds
+    set $ORM bog_orm.dds
 }

@@ -176,10 +176,10 @@ material Examples/LightRibbonTrail
 				filtering none
 			}
 
-            rtshader_system
+            /*rtshader_system
             {
                 lighting_stage per_pixel
-            }
+            }*/
 		}
 	}
 }

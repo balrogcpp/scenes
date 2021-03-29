@@ -1,0 +1,20 @@
+import PBR from pbr.material
+import PBR_IBL from pbr.material
+
+material DamagedHelmet2 : PBR
+{
+    set $Albedo Default_albedo.jpg
+    set $Normal Default_normal.jpg
+    set $Metallic Default_metallic.dds
+    set $Roughness Default_roughness.dds
+    set $AO Default_AO.jpg
+    set $Emissive Default_emissive.jpg
+}
+
+material DamagedHelmet : PBR
+{
+    set $Albedo Default_albedo.jpg
+    set $Normal Default_normal.jpg
+    set $ORM Default_metalRoughness.jpg
+    set $Emissive Default_emissive.jpg
+}

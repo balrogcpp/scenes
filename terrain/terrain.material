@@ -1,11 +1,9 @@
 import Terrain from pbr.material
+import PBR from pbr.material
 
 material TerrainCustom : Terrain
 {
-    set $Albedo forest_floor_albedo.png
-    set $Normal forest_floor_Normal-dx.png
-    set $Metallic forest_floor_Metallic.png
-    set $Roughness forest_floor_Roughness.png
-    set $AO forest_floor-ao.png
-    set $Offset forest_floor_Height.png
+    set $Albedo bog_albedo.dds
+    set $Normal bog_normal.dds
+    set $ORM bog_orm.dds
 }
