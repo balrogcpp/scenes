@@ -1,0 +1,10 @@
+import PBR from pbr.material
+import PBR_IBL from pbr.material
+
+material DamagedHelmet : PBR
+{
+    set $Albedo Default_albedo.dds
+    set $Normal Default_normal.dds
+    set $ORM Default_ORM.dds
+    set $Emissive Default_emissive.dds
+}

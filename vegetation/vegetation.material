@@ -8,7 +8,7 @@ material GrassCustom : Grass
     {
       pass
       {
-        alpha_rejection greater_equal 128
+        //alpha_rejection greater_equal 128
 
         texture_unit Albedo
         {
