@@ -12,9 +12,9 @@ material ReflectivePlane2 : PBR
 
 material ReflectivePlane : PBR
 {
-    /*set $Albedo bog_albedo.dds
+    set $Albedo bog_albedo.dds
     set $Normal bog_normal.dds
-    set $ORM bog_orm.dds*/
+    set $ORM bog_orm.dds
 
     //set $Albedo green.dds
     //set $Normal bog_normal.dds
